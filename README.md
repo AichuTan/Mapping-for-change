@@ -12,7 +12,7 @@
 
 ## 🌐 Live Website
 
-🔗 [View the live site on GitHub Pages](https://aichutan.github.io/Mapping-for-change/index.html)
+🔗 [View the live site](https://aichutan.github.io/Mapping-for-change/index.html)
 
 
 ---
