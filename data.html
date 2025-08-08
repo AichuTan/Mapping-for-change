@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data & Findings – Mapping for Change</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="topnav">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="image/mappingforchange.png" alt="Mapping for Change Logo" />
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="case-study.html">Case Study</a>
+        <a href="data.html">Data</a>
+        <a href="action.html">Call to Action</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <h2>Where Inequality Lives: A Data-Driven Look at Downtown San Diego</h2>
+    <p>
+      Mapping homelessness, housing burden, and tree equity block by block.
+    </p>
+    <p>
+      This project uses a custom-built ArcGIS Dashboard to visualize how homelessness, housing burden, and environmental inequality overlap across Downtown San Diego. By combining spatial analysis, public data, and interactive tools, we reveal how systemic urban injustice plays out block by block.
+    </p>
+    <div class="map-container">
+      <iframe src="https://sdsugeo.maps.arcgis.com/apps/dashboards/4f0e037980b74faa9be9b0b907e95cef" width="100%" height="600" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+ <section>
+  <h3>Methods Used</h3>
+  <p>
+    This project employs a <strong>quantitative spatial analysis</strong> approach to examine how homelessness, housing burden, and environmental inequality intersect across Downtown San Diego. A custom-built <strong>ArcGIS Dashboard</strong> integrates public datasets from authoritative sources to visualize patterns of urban injustice—especially those affecting unhoused individuals and rent-burdened residents.
+  </p>
+  <p>
+    Focus areas include Downtown neighborhoods such as <em>East Village, Cortez Hill, Gaslamp Quarter, Little Italy, Horton Plaza, Harborview, Marina</em>, and <em>Core-Columbia</em>, chosen due to visible economic contrasts, high encampment reports, and ongoing redevelopment.
+  </p>
+
+  <p><strong>Key datasets include:</strong></p>
+  <ul>
+    <li><strong>Point-In-Time Count (PITC) 2024</strong> – Counts of sheltered and unsheltered populations from UCSD HHUB and RTFH</li>
+    <li><strong>311 Encampment Reports (2024)</strong> – Resident-submitted reports of visible encampments across Downtown</li>
+    <li><strong>American Community Survey (2018–2022)</strong> – Median income, rent, poverty, and housing data via the U.S. Census</li>
+    <li><strong>Tree Equity Score (TES)</strong> – Environmental equity index by American Forests, measuring canopy, poverty, and urban heat</li>
+    <li><strong>Neighborhood Boundaries (2024)</strong> – Administrative units from the City of San Diego for spatial aggregation</li>
+  </ul>
+
+  <p><strong>Spatial methods and tools used:</strong></p>
+  <ul>
+    <li>Heatmaps of 311 encampment reports to show visibility and density</li>
+    <li>Proportional symbols to represent PITC homeless counts</li>
+    <li>Choropleth maps for affordability gap, rent burden, and TES</li>
+    <li>Swipe maps to compare layers side-by-side (e.g., TES vs Homelessness)</li>
+    <li>Scatterplots and bar charts to reveal relationships between poverty, income, rent, and tree cover</li>
+  </ul>
+
+  <p>
+    All data was prepared in <strong>ArcGIS Online</strong> and aligned using Downtown neighborhood boundaries. Indicators were enriched using <strong>Arcade expressions</strong> to calculate:
+  </p>
+  <ul>
+    <li><strong>Affordability Gap:</strong> Monthly rent divided by monthly income</li>
+    <li><strong>Rent Burden:</strong> Classified as Not burdened (&lt;30%), Burdened (30–50%), Severely burdened (&gt;50%)</li>
+    <li><strong>Homeless Rate:</strong> Per 1,000 residents in each neighborhood</li>
+  </ul>
+
+  <p>
+    The final dashboard enables <strong>interactive, multi-layered exploration</strong> through components like:
+  </p>
+  <ul>
+    <li>Swipe map tool for comparing spatial layers</li>
+    <li>Heatmap of 311 encampment visibility</li>
+    <li>Choropleths for affordability gap, TES, and homeless rate</li>
+    <li>Donut chart showing rent burden breakdown</li>
+    <li>Bar charts comparing rent vs. income</li>
+    <li>Scatterplot visualizing the correlation between poverty rate and tree equity score</li>
+  </ul>
+
+  <p>
+    These tools reveal where multiple forms of inequality converge—offering a powerful lens for understanding and addressing spatial injustice in San Diego.
+  </p>
+</section>
+
+
+  <section>
+    <h3>Key Findings</h3>
+
+    <h4>Finding 1: Homelessness Clusters and Visibility</h4>
+    <p>
+      East Village has the highest concentration of encampments in the region, with over 171 unhoused individuals recorded in one census tract. 311 heatmaps show clusters along Market Street and 16th Street, and public reports express frustration over the lack of public restrooms and basic infrastructure.
+    </p>
+    <blockquote>
+      “There is a homeless encampment in our residential neighborhood without a public restroom within ¾ mile…  
+      creating a serious human health issue.”<br />
+      — 311 Public Report, 2024
+    </blockquote>
+    <p>
+      These concerns reflect not just visibility, but unmet infrastructure needs.
+    </p>
+
+    <h4>Finding 2: Environmental Injustice – Tree Equity Disparities</h4>
+    <p>
+      Tree Equity Scores (TES) across Downtown San Diego show a stark environmental divide. In neighborhoods like East Village, the TES is as low as 43, while in more affluent areas such as Little Italy, scores exceed 88. This disparity is more than aesthetic—it reflects a deeper pattern of environmental inequality.
+    </p>
+    <p>
+      A scatterplot analysis reveals a strong correlation: as poverty increases, tree cover decreases. This matters because neighborhoods with low TES not only lack greenery but also face greater exposure to heat, poor air quality, and chronic stress. These conditions worsen health outcomes and compound other structural vulnerabilities like housing insecurity and disinvestment.
+    </p>
+
+    <h4>Finding 3: The Affordability Crisis – Rent Outpaces Income</h4>
+    <p>
+      Housing affordability remains one of the most urgent challenges in Downtown San Diego. The Affordability Gap Map shows that in areas like Horton Plaza, East Village, and Core-Columbia, rent significantly outpaces income.
+    </p>
+    <p>
+      For example, in Horton Plaza, the median rent is $1,700/month, while the average income is only $3,100/month—meaning more than 50% of income is spent on housing.
+    </p>
+    <p>
+      According to the dashboard’s donut chart:
+      <ul>
+        <li>62.5% of households are not burdened</li>
+        <li>25% are moderately burdened</li>
+        <li>12.5% are severely burdened (spending over half their income on rent)</li>
+      </ul>
+    </p>
+    <p>
+      These affordability pressures are most concentrated in historically underserved neighborhoods and leave many residents vulnerable to eviction, displacement, and long-term financial instability.
+    </p>
+  </section>
+
+  <section>
+    <h3>Conclusion: Data for Action</h3>
+    <p>
+      These maps and metrics tell a clear story: Downtown San Diego’s most vulnerable residents are concentrated in places with the least protection—low tree cover, high rents, and limited public infrastructure.
+    </p>
+    <p>
+      Spatial injustice is not random. It’s the result of policy, planning, and patterns of exclusion. But it’s also measurable—and changeable.
+    </p>
+    <p>
+      This dashboard equips decision-makers, advocates, and planners with the insight needed to act on housing affordability, green infrastructure, and equitable redevelopment.
+    </p>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Aichu Tan – <em>Mapping for Change Project</em></p>
+    <p>Created as part of <strong>BDA 603: Smart Cities and Sustainability</strong></p>
+    <p>Master of Science in Big Data Analytics | San Diego State University</p>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a> |
+      <a href="case-study.html">Case Study</a> |
+      <a href="data.html">Data & Findings</a> |
+      <a href="action.html">Call to Action</a> |
+      <a href="about.html">About</a>
+    </nav>
+    <p>
+      <strong>Data Sources:</strong> ArcGIS Dashboard, UCSD HHUB, SanGIS, American Forests, U.S. Census
+    </p>
+    <p>
+      <strong>Contact:</strong>
+      <a href="mailto:dtan3697@sdsu.edu">dtan3697@sdsu.edu</a> /
+      <a href="mailto:tanaichu2021@gmail.com">tanaichu2021@gmail.com</a>
+    </p>
+  </footer>
+</body>
+</html>
