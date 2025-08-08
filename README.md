@@ -1,9 +1,9 @@
-# Mapping-for-change
+
 # Mapping for Change
 
 **Mapping for Change** is a data-driven web project that visualizes spatial inequality in Downtown San Diego through interactive maps, field observations, and public data. It highlights the intersection of housing burden, homelessness, and environmental injustice—empowering decision-makers, students, and community members to take action toward a more just city.
 
-📍 **Project Location:** Downtown San Diego, CA  
+📍 **Project Scope:** Downtown San Diego, CA  
 🎓 **Creator:** Aichu Tan  
 📊 **Institution:** San Diego State University, Big Data Analytics Program  
 📅 **Course:** BDA 603 – Smart Cities and Sustainability
@@ -12,8 +12,8 @@
 
 ## 🌐 Live Website
 
-🔗 [View the live site on GitHub Pages](https://yourusername.github.io/mapping-for-change/)  
-(*Replace `yourusername` with your GitHub handle once deployed.*)
+🔗 [View the live site on GitHub Pages](https://aichutan.github.io/Mapping-for-change/index.html)
+
 
 ---
 
