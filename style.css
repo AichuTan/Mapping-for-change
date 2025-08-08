@@ -305,7 +305,7 @@ footer {
 }
 .site-footer {
   text-align: center;
-  background-color: #f2f2f2;
+  background-color:  hsl(0, 4%, 59%);
   padding: 30px 20px;
   font-size: 0.9rem;
   color: #444;
