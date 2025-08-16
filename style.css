@@ -311,7 +311,7 @@ footer {
 }
 .site-footer {
   text-align: center;
-  background-color:  hsl(0, 4%, 59%);
+  background-color:  #dddfe1;
   padding: 30px 20px;
   font-size: 0.9rem;
   color: #444;
@@ -421,3 +421,54 @@ section ul li {
   background-color: #1abc9c;
   transform: translateY(-2px);
 }
+
+
+/* --- Mobile-friendly tweaks --- */
+
+/* Fluid basics */
+img, iframe, video { max-width: 100%; height: auto; }
+section { scroll-margin-top: 64px; }  /* anchor links not hidden under sticky nav */
+
+/* ≤ 900px: tablet */
+@media (max-width: 900px){
+  .hero-header{ padding: 220px 16px; }
+  header h1{ font-size: 2.2rem; }
+  header h2{ font-size: 1.4rem; }
+  .tagline{ font-size: 1.1rem; }
+
+  .topnav a{ font-size: 1rem; padding: 6px 8px; }
+  .topnav .logo img{ max-height: 32px; }
+
+  section{ margin: 24px 12px; padding: 20px; }
+  .video-container{ width: 100%; margin: 16px auto; }
+
+  .side-by-side{ flex-direction: column; gap: 18px; }
+  .side-by-side .text, .side-by-side .image{ flex-basis: 100%; }
+
+  .insight-grid{ gap: 18px; }
+  .insight{ flex: 1 1 45%; max-width: 48%; }
+}
+
+/* ≤ 600px: phone */
+@media (max-width: 600px){
+  .hero-header{ padding: 140px 12px; }
+  header h1{ font-size: 1.8rem; }
+  header h2{ font-size: 1.2rem; }
+  .tagline{ font-size: 1rem; }
+
+  .topnav{ padding: 4px 0; }
+  .topnav .nav-links{ gap: 8px; flex-wrap: wrap; }   /* allow 2 lines if needed */
+  .topnav a{ font-size: .95rem; padding: 6px 8px; }
+  .topnav .logo img{ max-height: 26px; }
+
+  section{ margin: 16px 10px; padding: 16px; border-left-width: 3px; }
+  .key-insights{ padding: 20px; }
+
+  .insight{ flex: 1 1 100%; max-width: 100%; }
+  .sdg-list li{ font-size: 1rem; }
+  .sdg-icon{ height: 26px; margin-right: 8px; }
+
+  .partner-logos img{ max-height: 54px; max-width: 110px; }
+  .about-image{ flex: 0 0 160px; max-width: 160px; }
+}
+
